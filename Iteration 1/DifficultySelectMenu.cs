@@ -26,5 +26,15 @@ namespace Iteration_1
         {
             Application.Exit(); //Exits the program fully when pressing x button
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            MapSelectMenu mapSelectMenu = new MapSelectMenu();
+            mapSelectMenu.Show(); //Opens LeaderBoard form
+            mapSelectMenu.Size = new Size(Convert.ToInt32(this.Width), Convert.ToInt32(this.Height)); //Matches the mapSelectMenu forms size with the size of the MainMenu form
+            if (this.WindowState == FormWindowState.Maximized) { mapSelectMenu.WindowState = FormWindowState.Maximized; } //If the MainMenu form was maximised, Maximise the mapSelectMenu form
+            mapSelectMenu.DesktopLocation = new Point(Convert.ToInt32(this.DesktopLocation.X), Convert.ToInt32(this.DesktopLocation.Y)); //Matches the position of mapSelectMenu form with the MainMenu form
+            this.Hide(); //Hides MainMenu form
+        }
     }
 }
