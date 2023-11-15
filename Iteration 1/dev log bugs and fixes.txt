@@ -1,4 +1,4 @@
 b582889 - Couldnt get the buttons to scale when shrinking the form, so limited size in order to fix the issue as the issue only occured on sizes too small to reasonably use.
 f94cb34 - Due to hiding the main menu form, when pressing x on the opened menus it would close the form rather than the application, Solved by adding Application.Exit() to the formclosing event which overides this to close the entire application.
 d80ac45 - Bug causing the opened forms to be different sizes to the previous form solved by copying the size and maximised state across forms being opened
-        - Bug causing the opened forms position to be different to the previous form, solved by copying the desktop position between forms
+be3e377 - Bug causing the opened forms position to be different to the previous form, solved by copying the desktop position between forms

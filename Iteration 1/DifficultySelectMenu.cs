@@ -24,7 +24,7 @@ namespace Iteration_1
 
         private void ClosingForm(object sender, FormClosingEventArgs e)
         {
-            Application.Exit(); //fixes f94cb34 bug
+            Application.Exit(); //Exits the program fully when pressing x button
         }
     }
 }
