@@ -12,6 +12,7 @@ namespace Iteration_1
 {
     public partial class LeaderBoard : Form
     {
+        SelectedDifficulty difficulty = SelectedDifficulty.Easy; //Defaults the selected value to easy
         enum SelectedDifficulty
         {
             Easy,
@@ -26,7 +27,6 @@ namespace Iteration_1
         private void LeaderBoard_Load(object sender, EventArgs e)
         {
             btnEasy.BackColor = Color.FromArgb(55, 60, 65);
-
         }
 
         private void ClosingForm(object sender, FormClosingEventArgs e)
@@ -67,19 +67,19 @@ namespace Iteration_1
 
         private void btnEasy_Click(object sender, EventArgs e)
         {
-            SelectedDifficulty difficulty = SelectedDifficulty.Easy;
+            difficulty = SelectedDifficulty.Easy;
             changeDifficulty(difficulty);
         }
 
         private void btnMedium_Click(object sender, EventArgs e)
         {
-            SelectedDifficulty difficulty = SelectedDifficulty.Medium;
+            difficulty = SelectedDifficulty.Medium;
             changeDifficulty(difficulty);
         }
 
         private void btnHard_Click(object sender, EventArgs e)
         {
-            SelectedDifficulty difficulty = SelectedDifficulty.Hard;
+            difficulty = SelectedDifficulty.Hard;
             changeDifficulty(difficulty);
         }
     }
