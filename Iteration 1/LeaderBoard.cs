@@ -12,6 +12,12 @@ namespace Iteration_1
 {
     public partial class LeaderBoard : Form
     {
+        enum SelectedDifficulty
+        {
+            Easy,
+            Medium,
+            Hard
+        }
         public LeaderBoard()
         {
             InitializeComponent();
@@ -19,6 +25,7 @@ namespace Iteration_1
 
         private void LeaderBoard_Load(object sender, EventArgs e)
         {
+            btnEasy.BackColor = Color.FromArgb(55, 60, 65);
 
         }
 
@@ -30,11 +37,50 @@ namespace Iteration_1
         private void btnBack_Click(object sender, EventArgs e)
         {
             MainMenu mainMenu = new MainMenu();
-            mainMenu.Show(); //Opens LeaderBoard form
-            mainMenu.Size = new Size(Convert.ToInt32(this.Width), Convert.ToInt32(this.Height)); //Matches the mainMenu forms size with the size of the MainMenu form
-            if (this.WindowState == FormWindowState.Maximized) { mainMenu.WindowState = FormWindowState.Maximized; } //If the MainMenu form was maximised, Maximise the mainMenu form
-            mainMenu.DesktopLocation = new Point(Convert.ToInt32(this.DesktopLocation.X), Convert.ToInt32(this.DesktopLocation.Y)); //Matches the position of mainMenu form with the MainMenu form
+            mainMenu.Show(); //Opens MainMenu form
+            mainMenu.Size = new Size(Convert.ToInt32(this.Width), Convert.ToInt32(this.Height)); //Matches the mainMenu forms size with the size of the LeaderBoard form
+            if (this.WindowState == FormWindowState.Maximized) { mainMenu.WindowState = FormWindowState.Maximized; } //If the LeaderBoard form was maximised, Maximise the mainMenu form
+            mainMenu.DesktopLocation = new Point(Convert.ToInt32(this.DesktopLocation.X), Convert.ToInt32(this.DesktopLocation.Y)); //Matches the position of mainMenu form with the LeaderBoard form
             this.Hide(); //Hides LeaderBoard form
+        }
+        void changeDifficulty(SelectedDifficulty difficulty)
+        {
+            if(difficulty == SelectedDifficulty.Easy) 
+            {
+                btnEasy.BackColor = Color.FromArgb(55, 60, 65);
+                btnMedium.BackColor = Color.FromArgb(35, 40, 45);
+                btnHard.BackColor = Color.FromArgb(35, 40, 45);
+            }
+            if(difficulty == SelectedDifficulty.Medium) 
+            {
+                btnMedium.BackColor = Color.FromArgb(55, 60, 65);
+                btnEasy.BackColor = Color.FromArgb(35, 40, 45);
+                btnHard.BackColor = Color.FromArgb(35, 40, 45);
+            }
+            if (difficulty == SelectedDifficulty.Hard) 
+            {
+                btnHard.BackColor = Color.FromArgb(55, 60, 65);
+                btnMedium.BackColor = Color.FromArgb(35, 40, 45);
+                btnEasy.BackColor = Color.FromArgb(35, 40, 45);
+            }
+        }
+
+        private void btnEasy_Click(object sender, EventArgs e)
+        {
+            SelectedDifficulty difficulty = SelectedDifficulty.Easy;
+            changeDifficulty(difficulty);
+        }
+
+        private void btnMedium_Click(object sender, EventArgs e)
+        {
+            SelectedDifficulty difficulty = SelectedDifficulty.Medium;
+            changeDifficulty(difficulty);
+        }
+
+        private void btnHard_Click(object sender, EventArgs e)
+        {
+            SelectedDifficulty difficulty = SelectedDifficulty.Hard;
+            changeDifficulty(difficulty);
         }
     }
 }

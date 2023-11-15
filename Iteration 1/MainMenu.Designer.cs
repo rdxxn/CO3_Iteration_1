@@ -32,21 +32,21 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnPlay = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.btnLeaderBoard = new System.Windows.Forms.Button();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.btnQuit = new System.Windows.Forms.Button();
-            this.v̷̬̍o̶̝͊i̷̖̐d̷̫̈ = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnPlay = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnLeaderBoard = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.btnQuit = new System.Windows.Forms.Button();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.v̷̬̍o̶̝͊i̷̖̐d̷̫̈ = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel12.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -87,6 +87,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Untitled Game";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnPlay);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Location = new System.Drawing.Point(3, 126);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 17, 3, 34);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(284, 97);
+            this.panel2.TabIndex = 1;
+            // 
             // btnPlay
             // 
             this.btnPlay.AutoSize = true;
@@ -108,6 +118,13 @@
             this.btnPlay.UseVisualStyleBackColor = true;
             this.btnPlay.Click += new System.EventHandler(this.PlayClick);
             // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(28, 100);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 62);
+            this.panel4.TabIndex = 8;
+            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.btnLeaderBoard);
@@ -117,13 +134,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(284, 97);
             this.panel7.TabIndex = 8;
-            // 
-            // panel8
-            // 
-            this.panel8.Location = new System.Drawing.Point(28, 100);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(200, 62);
-            this.panel8.TabIndex = 8;
             // 
             // btnLeaderBoard
             // 
@@ -148,6 +158,13 @@
             this.btnLeaderBoard.UseVisualStyleBackColor = true;
             this.btnLeaderBoard.Click += new System.EventHandler(this.LeaderBoardClick);
             // 
+            // panel8
+            // 
+            this.panel8.Location = new System.Drawing.Point(28, 100);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(200, 62);
+            this.panel8.TabIndex = 8;
+            // 
             // panel12
             // 
             this.panel12.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -158,13 +175,6 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(284, 97);
             this.panel12.TabIndex = 10;
-            // 
-            // panel13
-            // 
-            this.panel13.Location = new System.Drawing.Point(28, 100);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(200, 62);
-            this.panel13.TabIndex = 8;
             // 
             // btnQuit
             // 
@@ -187,6 +197,13 @@
             this.btnQuit.UseVisualStyleBackColor = true;
             this.btnQuit.Click += new System.EventHandler(this.QuitClick);
             // 
+            // panel13
+            // 
+            this.panel13.Location = new System.Drawing.Point(28, 100);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(200, 62);
+            this.panel13.TabIndex = 8;
+            // 
             // v̷̬̍o̶̝͊i̷̖̐d̷̫̈
             // 
             this.v̷̬̍o̶̝͊i̷̖̐d̷̫̈.AccessibleDescription = "The Abyss Watches The Abyss Watches The Abyss Watches The Abyss Watches The Abyss" +
@@ -200,23 +217,6 @@
             this.v̷̬̍o̶̝͊i̷̖̐d̷̫̈.Name = "v̷̬̍o̶̝͊i̷̖̐d̷̫̈";
             this.v̷̬̍o̶̝͊i̷̖̐d̷̫̈.Size = new System.Drawing.Size(971, 681);
             this.v̷̬̍o̶̝͊i̷̖̐d̷̫̈.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(28, 100);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 62);
-            this.panel4.TabIndex = 8;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnPlay);
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Location = new System.Drawing.Point(3, 126);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 17, 3, 34);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(284, 97);
-            this.panel2.TabIndex = 1;
             // 
             // MainMenu
             // 
@@ -238,12 +238,12 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

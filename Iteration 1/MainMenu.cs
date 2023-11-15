@@ -24,7 +24,7 @@ namespace Iteration_1
 
         void GoTo(Form Destination)
         {
-            Destination.Show(); //Opens LeaderBoard form
+            Destination.Show(); //Opens Destination form
             Destination.Size = new Size(Convert.ToInt32(this.Width), Convert.ToInt32(this.Height)); //Matches the Destination forms size with the size of the MainMenu form
             if (this.WindowState == FormWindowState.Maximized) { Destination.WindowState = FormWindowState.Maximized; } //If the MainMenu form was maximised, Maximise the Destination form
             Destination.DesktopLocation = new Point(Convert.ToInt32(this.DesktopLocation.X), Convert.ToInt32(this.DesktopLocation.Y)); //Matches the position of destination form with the MainMenu form
