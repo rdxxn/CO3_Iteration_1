@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "LeaderBoard";
             this.Text = "LeaderBoard";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ClosingForm);
             this.Load += new System.EventHandler(this.LeaderBoard_Load);
             this.ResumeLayout(false);
 

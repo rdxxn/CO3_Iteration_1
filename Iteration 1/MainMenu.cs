@@ -22,29 +22,26 @@ namespace Iteration_1
 
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void PlayClick(object sender, EventArgs e)
         {
-
+            new MapSelectMenu().Show(); //Opens MapSelectMenu form
+            this.Hide(); //Closes MainMenu form
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void QuitClick(object sender, EventArgs e)
         {
-
+            Application.Exit(); //Exits the program
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void LeaderBoardClick(object sender, EventArgs e)
         {
-
+            new LeaderBoard().Show(); //Opens LeaderBoard form
+            this.Hide(); //Closes MainMenu form
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void ClosingForm(object sender, FormClosingEventArgs e)
         {
-
-        }
-
-        private void panel14_Paint(object sender, PaintEventArgs e)
-        {
-
+            Application.Exit();
         }
     }
 }

@@ -21,5 +21,10 @@ namespace Iteration_1
         {
 
         }
+
+        private void ClosingForm(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

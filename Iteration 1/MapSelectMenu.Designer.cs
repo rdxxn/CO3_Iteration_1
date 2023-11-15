@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "MapSelectMenu";
             this.Text = "MapSelectMenu";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ClosingForm);
             this.Load += new System.EventHandler(this.MapSelectMenu_Load);
             this.ResumeLayout(false);
 

@@ -1,0 +1,1 @@
+b582889 - Couldnt get the buttons to scale when shrinking the form, so limited size in order to fix the issue as the issue only occured on sizes too small to reasonably use.
