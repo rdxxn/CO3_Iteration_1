@@ -24,6 +24,7 @@ namespace Iteration_1
             InitializeComponent();
         }
 
+
         private void LeaderBoard_Load(object sender, EventArgs e)
         {
             btnEasy.BackColor = Color.FromArgb(55, 60, 65);
