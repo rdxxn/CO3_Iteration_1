@@ -44,7 +44,7 @@ namespace Iteration_1
             mainMenu.DesktopLocation = new Point(Convert.ToInt32(this.DesktopLocation.X), Convert.ToInt32(this.DesktopLocation.Y)); //Matches the position of mainMenu form with the LeaderBoard form
             this.Hide(); //Hides LeaderBoard form
         }
-        void changeDifficulty(SelectedDifficulty difficulty)
+        void changeDifficulty(SelectedDifficulty difficulty) //Highlights the selected difficulty
         {
             if(difficulty == SelectedDifficulty.Easy) 
             {

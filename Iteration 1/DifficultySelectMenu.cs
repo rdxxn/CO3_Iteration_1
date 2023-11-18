@@ -12,6 +12,13 @@ namespace Iteration_1
 {
     public partial class DifficultySelectMenu : Form
     {
+        SelectedDifficulty difficulty = SelectedDifficulty.Easy; //Defaults the selected value to easy
+        enum SelectedDifficulty
+        {
+            Easy,
+            Medium,
+            Hard
+        }
         public DifficultySelectMenu()
         {
             InitializeComponent();
@@ -35,6 +42,23 @@ namespace Iteration_1
             if (this.WindowState == FormWindowState.Maximized) { mapSelectMenu.WindowState = FormWindowState.Maximized; } //If the MainMenu form was maximised, Maximise the mapSelectMenu form
             mapSelectMenu.DesktopLocation = new Point(Convert.ToInt32(this.DesktopLocation.X), Convert.ToInt32(this.DesktopLocation.Y)); //Matches the position of mapSelectMenu form with the MainMenu form
             this.Hide(); //Hides MainMenu form
+        }
+
+        private void btnEasy_Click(object sender, EventArgs e)
+        {
+            difficulty = SelectedDifficulty.Easy;
+        }
+
+        private void btnMedium_Click(object sender, EventArgs e)
+        {
+            difficulty = SelectedDifficulty.Medium;
+
+        }
+
+        private void btnHard_Click(object sender, EventArgs e)
+        {
+            difficulty = SelectedDifficulty.Hard;
+
         }
     }
 }
