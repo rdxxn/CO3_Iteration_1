@@ -5,5 +5,5 @@ be3e377 - Bug causing the opened forms position to be different to the previous 
 f27990b - Leaderboards resizing improperly, Maps 1 and 2 stayed the same width and leaderboard 3 filled the expanded space https://imgur.com/a/EKn4FAF
 f27990b - Leaderboards scaling correctly vertically but do not scale horizontally correctly https://imgur.com/a/fVvAMZZ https://imgur.com/a/uqCfkSp
 f27990b - Fixed both by using a TableLayoutPanel
-	- The titles of the Leader boards do not automatically center and stay at the same distance from the left https://imgur.com/a/4wMmwxb solved by removing the left and right anchors on the label, leaving only the top anchor
-	- The MapSelectMenu MedalContainers do not scale correctly https://imgur.com/a/83W4E9S https://imgur.com/a/pEoPMZ3 fixed because forgot to dock:fill the MapMedalContainers
+213d6ff - The titles of the Leader boards do not automatically center and stay at the same distance from the left https://imgur.com/a/4wMmwxb solved by removing the left and right anchors on the label, leaving only the top anchor
+213d6ff - The MapSelectMenu MedalContainers do not scale correctly https://imgur.com/a/83W4E9S https://imgur.com/a/pEoPMZ3 fixed because forgot to dock:fill the MapMedalContainers

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MapSelectMenu));
             this.btnBack = new System.Windows.Forms.Button();
-            this.btnForwardsPlaceholder = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -43,15 +42,15 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblMap2 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btnMap3 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btnMap2 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnMap1 = new System.Windows.Forms.Button();
             this.Map2MedalContainer = new System.Windows.Forms.Panel();
             this.Map2Medals = new System.Windows.Forms.TableLayoutPanel();
             this.Map3MedalContainer = new System.Windows.Forms.Panel();
             this.Map3Medals = new System.Windows.Forms.TableLayoutPanel();
-            this.btnMap1 = new System.Windows.Forms.Button();
-            this.btnMap2 = new System.Windows.Forms.Button();
-            this.btnMap3 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -84,21 +83,10 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // btnForwardsPlaceholder
-            // 
-            this.btnForwardsPlaceholder.Location = new System.Drawing.Point(153, 3);
-            this.btnForwardsPlaceholder.Name = "btnForwardsPlaceholder";
-            this.btnForwardsPlaceholder.Size = new System.Drawing.Size(163, 82);
-            this.btnForwardsPlaceholder.TabIndex = 1;
-            this.btnForwardsPlaceholder.Text = "Temporary\r\nForwards\r\nButton\r\nPlaceholder";
-            this.btnForwardsPlaceholder.UseVisualStyleBackColor = true;
-            this.btnForwardsPlaceholder.Click += new System.EventHandler(this.btnForwardsPlaceholder_Click);
-            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Controls.Add(this.btnForwardsPlaceholder);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 596);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
@@ -252,6 +240,22 @@
             this.panel7.Size = new System.Drawing.Size(401, 409);
             this.panel7.TabIndex = 5;
             // 
+            // btnMap3
+            // 
+            this.btnMap3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMap3.FlatAppearance.BorderSize = 0;
+            this.btnMap3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(65)))));
+            this.btnMap3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
+            this.btnMap3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMap3.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnMap3.Location = new System.Drawing.Point(0, 0);
+            this.btnMap3.Margin = new System.Windows.Forms.Padding(0);
+            this.btnMap3.Name = "btnMap3";
+            this.btnMap3.Size = new System.Drawing.Size(401, 409);
+            this.btnMap3.TabIndex = 1;
+            this.btnMap3.UseVisualStyleBackColor = true;
+            this.btnMap3.Click += new System.EventHandler(this.btnMap3_Click);
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
@@ -263,6 +267,22 @@
             this.panel6.Size = new System.Drawing.Size(400, 409);
             this.panel6.TabIndex = 7;
             // 
+            // btnMap2
+            // 
+            this.btnMap2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMap2.FlatAppearance.BorderSize = 0;
+            this.btnMap2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(65)))));
+            this.btnMap2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
+            this.btnMap2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMap2.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnMap2.Location = new System.Drawing.Point(0, 0);
+            this.btnMap2.Margin = new System.Windows.Forms.Padding(0);
+            this.btnMap2.Name = "btnMap2";
+            this.btnMap2.Size = new System.Drawing.Size(400, 409);
+            this.btnMap2.TabIndex = 1;
+            this.btnMap2.UseVisualStyleBackColor = true;
+            this.btnMap2.Click += new System.EventHandler(this.btnMap2_Click);
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
@@ -273,6 +293,22 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(399, 409);
             this.panel5.TabIndex = 6;
+            // 
+            // btnMap1
+            // 
+            this.btnMap1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMap1.FlatAppearance.BorderSize = 0;
+            this.btnMap1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(65)))));
+            this.btnMap1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
+            this.btnMap1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMap1.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnMap1.Location = new System.Drawing.Point(0, 0);
+            this.btnMap1.Margin = new System.Windows.Forms.Padding(0);
+            this.btnMap1.Name = "btnMap1";
+            this.btnMap1.Size = new System.Drawing.Size(399, 409);
+            this.btnMap1.TabIndex = 0;
+            this.btnMap1.UseVisualStyleBackColor = true;
+            this.btnMap1.Click += new System.EventHandler(this.btnMap1_Click);
             // 
             // Map2MedalContainer
             // 
@@ -328,54 +364,6 @@
             this.Map3Medals.Size = new System.Drawing.Size(401, 137);
             this.Map3Medals.TabIndex = 0;
             // 
-            // btnMap1
-            // 
-            this.btnMap1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnMap1.FlatAppearance.BorderSize = 0;
-            this.btnMap1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(65)))));
-            this.btnMap1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
-            this.btnMap1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMap1.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnMap1.Location = new System.Drawing.Point(0, 0);
-            this.btnMap1.Margin = new System.Windows.Forms.Padding(0);
-            this.btnMap1.Name = "btnMap1";
-            this.btnMap1.Size = new System.Drawing.Size(399, 409);
-            this.btnMap1.TabIndex = 0;
-            this.btnMap1.UseVisualStyleBackColor = true;
-            this.btnMap1.Click += new System.EventHandler(this.btnMap1_Click);
-            // 
-            // btnMap2
-            // 
-            this.btnMap2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnMap2.FlatAppearance.BorderSize = 0;
-            this.btnMap2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(65)))));
-            this.btnMap2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
-            this.btnMap2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMap2.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnMap2.Location = new System.Drawing.Point(0, 0);
-            this.btnMap2.Margin = new System.Windows.Forms.Padding(0);
-            this.btnMap2.Name = "btnMap2";
-            this.btnMap2.Size = new System.Drawing.Size(400, 409);
-            this.btnMap2.TabIndex = 1;
-            this.btnMap2.UseVisualStyleBackColor = true;
-            this.btnMap2.Click += new System.EventHandler(this.btnMap2_Click);
-            // 
-            // btnMap3
-            // 
-            this.btnMap3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnMap3.FlatAppearance.BorderSize = 0;
-            this.btnMap3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(65)))));
-            this.btnMap3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
-            this.btnMap3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMap3.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnMap3.Location = new System.Drawing.Point(0, 0);
-            this.btnMap3.Margin = new System.Windows.Forms.Padding(0);
-            this.btnMap3.Name = "btnMap3";
-            this.btnMap3.Size = new System.Drawing.Size(401, 409);
-            this.btnMap3.TabIndex = 1;
-            this.btnMap3.UseVisualStyleBackColor = true;
-            this.btnMap3.Click += new System.EventHandler(this.btnMap3_Click);
-            // 
             // MapSelectMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -414,7 +402,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Button btnForwardsPlaceholder;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
